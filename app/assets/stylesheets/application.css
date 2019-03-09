@@ -15,3 +15,32 @@
  *= require_tree .
  *= require_self
  */
+
+
+.orga{
+  /*text-align: center;*/
+  display: flex;
+  flex-wrap: wrap;;
+
+    min-width: 300px !importants;
+  /*margin: auto;*/
+}
+
+.cardi{
+  margin: 10px;
+  /*min-width: 300px;*/
+}
+
+.search_page{
+  background-color: #f8f9fa !important;
+  /*width: 100% !important;*/
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.taille{
+  min-width: 300px;
+}

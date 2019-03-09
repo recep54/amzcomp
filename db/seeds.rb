@@ -8,14 +8,18 @@
 
 require 'faker'
 
-a = 0
-50.times do
-  Product.create(name: Faker::Name.first_name, surl: "#{a}")
-  a += 1
+json = File.read("./vendor/db.json")
+@all_product = JSON.parse(json)
+
+
+@all_product.each do |f|
+  Product.create!(
+    url: f["url"],
+    title: f["title"],
+    price: f["price"],
+    asin: f["asin"],
+    price_es: f["price_es"],
+    price_it: f["price_it"],
+    price_de: f["price_de"])
 end
 
-a = 0
-50.times do
-  Film.create(name: Faker::Name.first_name, surl: "#{a}")
-  a += 1
-end

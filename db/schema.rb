@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_105055) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "url"
+    t.string "surl"
     t.string "title"
     t.string "price"
     t.string "asin"

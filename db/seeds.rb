@@ -14,7 +14,7 @@ json = File.read("./vendor/db.json")
 
 @all_product.each do |f|
   Product.create!(
-    url: f["url"],
+    surl: f["url"],
     title: f["title"],
     price: f["price"],
     asin: f["asin"],

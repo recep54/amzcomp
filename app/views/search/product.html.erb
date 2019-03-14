@@ -1,50 +1,34 @@
 
-<div class="card" style="width: 18rem;">
-    
-    <%= image_tag @image, class:"card-img-top"%>
-    <div class="card-body">
 
-      <h1 class="card-text"><%= @product %></h1>
-      <p><span><%= @price_fr %></span><br/>
-      
-      <%= link_to "voir le produit", @lien_fr, class: "btn btn-primary" %> Amazon FR
+<h1><%=@prod.title%></h1>
 
+<div class="prod_cent">
+<div class= "prod">
 
-      </p>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_fr%> >
+    </iframe>
 
-      <% if @price_de != "none" %>
-      <p><span><%= @price_de %></span><br/>
-      <%= link_to "voir le produit", @lien_de, class: "btn btn-primary" %>       Amazon DE</p>
-        <p></p>
-        <p></p>
+    <!-- <p>hey</p> -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_es%> >
+    </iframe>
 
-      <%end%>
-      <% if @price_es != "none" %>
+    <!-- <p>hey</p> -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_de%> >
+    </iframe>
 
-      <p><span><%= @price_es %></span><br/>
-      <%= link_to "voir le produit", @lien_es, class: "btn btn-primary" %>       Amazon ES</p>
-        <p></p>
-        <p></p>
+    <!-- <p>hey</p> -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src= <%=@image_it%> >
+    </iframe>
 
-      <%end%>
-      <% if @price_it != "none" %>
-      <p><span><%= @price_it %></span><br/>
-      <%= link_to "voir le produit", @lien_it, class: "btn btn-primary" %>       Amazon IT</p>
-        <p></p>
-        <p></p>
-
-      <%end%>
-
-    </div>
-
-  </div>
-
-
+</div>
+</div>
 
 
 
 <p></p>
 <hr>
+
+
 <h3> Nouvelle recherche</h3>
 <div class="card" style="width: 18rem;">
               
